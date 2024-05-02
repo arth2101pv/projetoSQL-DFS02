@@ -1,0 +1,35 @@
+## Anotações
+
+ - CRUD = Create, Read, Upload, Delete (Manter).
+ - Banco de dados > Tabelas > Campos > Registros.
+ - Entidades(campos) se relacionam uma com a outra.
+
+## Tipos de Campos: 
+
+Caracteres:
+    
+    - varchar(255) //Aloca sempre 50 caracteres para o seu campo, - independetemente se for o espaço usado//
+    - char(255) - unicode //Aloca somente o espaço usado no campo//
+    - text
+
+Inteiro:
+
+    - int (ocupa 4 bytes)
+    - bit 0 ou 1
+
+Reais:
+
+    - decimal(9, 2)
+    - float(9, 2) 32bits
+    - double(9, 2) 64bits
+
+Datas e hora:
+
+    - date - 'aaaa/mm/dd'
+    - time - 'hh:mm:ss'
+    - datetime - 'aaaa/mm/dd hh:mm:ss'
+
+Booleano:
+
+    - bool - true / false
+    
