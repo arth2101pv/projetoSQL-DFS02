@@ -32,4 +32,27 @@ Datas e hora:
 Booleano:
 
     - bool - true / false
+
+
+--------------------------------------------------------------------------
+
+07/05
+
+Tipos de campos:
+
+    Composto -> endereço -> CEP
+                         -> Nº
+                         -> Logradouro
+                         -> Bairro
+                         -> Cidade
+                         -> Estado
     
+    Multivalorado -> Telefone -> Celular
+                              -> Residencial
+                              -> Recado
+    
+    Determinante (Valores não se repetem) -> CPF
+                                          -> CNPJ
+                                          -> RG
+                                          -> Título de eleitor
+                                          -> CTPS
