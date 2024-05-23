@@ -20,13 +20,13 @@ create table tbProdutos(
     );
 
 insert into tbProdutos(descricao, marca, preco)
-    values('Shampoo', 'nivea', 10.00);
+    values('Shampoo', 'Nivea', 10.00);
 insert into tbProdutos(descricao, marca, preco)
     values('Sabonete','Puma', 5.00);
 insert into tbProdutos(descricao, marca, preco)
     values('Creme de barbear', 'Loreal Paris', 25.00);
 insert into tbProdutos(descricao, marca, preco)
-    values('Shampoo', 'rexona', 12.50);
+    values('Shampoo', 'Rexona', 12.50);
 insert into tbProdutos(descricao, marca, preco)
     values('Condicionador', 'Jujutsu Piece', 100.00);
 
@@ -36,4 +36,19 @@ delete from tbProdutos where codProd = 2;
 
 select * from tbProdutos;
 
+
+-- ALIAS
 select codProd as 'Código', descricao as 'Descrição', marca as 'Marca', preco as 'Preço' from tbProdutos;
+
+-- Colunas virtuais
+select codProd, descricao, marca, preco, 'promoção' as 'promo'
+    from tbProdutos;
+
+select codProd as 'Código', descricao as 'Descrição', 'Promoção' as 'Promo', marca as 'Marca','Sim' as 'Vendido', preco as 'Preço' 
+    from tbprodutos;
+
+-- Utilizando cálculos no SQL
+update tbProdutos set preco = preco * 1.10 
+    where codProd = 5;
+
+select * from tbProdutos;
