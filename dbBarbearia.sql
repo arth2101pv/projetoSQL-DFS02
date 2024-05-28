@@ -52,3 +52,7 @@ update tbProdutos set preco = preco * 1.10
     where codProd = 5;
 
 select * from tbProdutos;
+
+select preco * 0.90 as 'Desconto' from tbProdutos;
+update tbProdutos set preco = preco * 0.20;
+select preco from tbProdutos;
